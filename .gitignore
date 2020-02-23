@@ -26,3 +26,8 @@
 **/.NET/**/packages
 **/CSSO/**/certificate.crt
 **/IA/__pycache__
+**.in
+**/out
+**/build
+**/*.out
+2nd year/Genetic Algorithms/T3/T3/date.in
