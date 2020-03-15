@@ -5,14 +5,12 @@
 // OpenGL sunt prefixate cu gl, cele din GLU cu glu si
 // cele din GLUT cu glut.
 
-// #include <GL/glut.h>
-
 #include <stdlib.h>
 #include <stdio.h>
 #include <math.h>
-
-#include "glut.h"
-
+#include <gl/glut.h>
+#include <gl/GL.h>
+#include <gl/GLU.h>
 unsigned char prevKey;
 
 void Display1() {
@@ -98,6 +96,7 @@ void Display6() {
 
 void Display7() {
 	// trasare patrulatere GL_QUADS : (v0,v1,v2,v3), (v4,v5,v6,v7), ...
+	glColor3f(1, 0.1, 0.1);
 	glPolygonMode(GL_FRONT, GL_FILL);
 	glBegin(GL_QUADS);
 	glVertex2f(0.3, 0.7);
@@ -114,7 +113,7 @@ void Display8() {
 	double xmax = 0.8, xmin = 0.35;
 	double ymax = 0.7, ymin = 0;
 	double c = 0.7;
-	glColor3f(0.2, 0.15, 0.88); // albastru
+	glColor4f(0.2, 0.15, 0.88, 0.001); // albastru
 	glBegin(GL_POLYGON);
 	glVertex2f(-xmax, ymin);
 	glVertex2f(-xmin, ymax);
