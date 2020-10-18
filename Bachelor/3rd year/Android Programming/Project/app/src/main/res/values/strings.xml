@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TechNewsAgg</string>
+    <string name="quit_button">QUIT</string>
+    <string name="menu_button">MENU</string>
+    <string name="preference_file_key">preference_file</string>
+    <string name="options_button">OPTIONS</string>
+    <string name="read_button">READ</string>
+    <string name="change_user_button">CHANGE USER</string>
+    <string name="select_feeds_button">SELECT FEEDS</string>
+    <string name="options">Options</string>
+    <string name="back_button">BACK</string>
+    <string name="apply_button">APPLY</string>
+</resources>

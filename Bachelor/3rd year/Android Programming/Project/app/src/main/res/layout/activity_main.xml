@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    >
+
+    <TextView
+        android:id="@+id/main_menu_app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tech News Agg"
+        android:layout_above="@+id/main_menu_hello_text"
+        android:layout_centerHorizontal="true"
+        android:textSize="50sp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginBottom="30sp"
+        />
+
+    <TextView
+        android:id="@+id/main_menu_hello_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello!"
+        android:layout_above="@+id/main_menu_read_button"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginBottom="30sp"
+        />
+
+    <Button
+        android:id="@+id/main_menu_read_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/read_button"
+        style="@style/AppTheme.MenuButtonTextStyle"
+        android:background="@drawable/menu_button"
+        />
+
+    <Button
+        android:id="@+id/main_menu_options_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_menu_read_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15sp"
+        android:text="@string/options_button"
+        style="@style/AppTheme.MenuButtonTextStyle"
+        android:background="@drawable/menu_button"
+        />
+
+    <Button
+        android:id="@+id/main_menu_quit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15sp"
+        android:layout_below="@id/main_menu_options_button"
+        android:text="@string/quit_button"
+        style="@style/AppTheme.MenuButtonTextStyle"
+        android:background="@drawable/menu_button"
+        />
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.options.OptionsActivity"
+    android:background="@color/background"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/options_back_button"
+        android:text="@string/options"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginBottom="50sp"
+
+        />
+
+    <Button
+        android:id="@+id/options_back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back_button"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        style="@style/AppTheme.MenuButtonTextStyle"
+        android:background="@drawable/menu_button"
+        />
+
+    <Button
+        android:id="@+id/options_change_user_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/change_user_button"
+        android:layout_below="@+id/options_back_button"
+        android:layout_marginTop="15sp"
+        android:layout_centerHorizontal="true"
+        style="@style/AppTheme.MenuButtonTextStyle"
+        android:background="@drawable/menu_button"
+        />
+
+    <Button
+        android:id="@+id/options_select_feed_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:text="@string/select_feeds_button"
+        android:layout_below="@id/options_change_user_button"
+        android:layout_centerHorizontal="true"
+        style="@style/AppTheme.MenuButtonTextStyle"
+        android:background="@drawable/menu_button"
+        />
+
+</RelativeLayout>

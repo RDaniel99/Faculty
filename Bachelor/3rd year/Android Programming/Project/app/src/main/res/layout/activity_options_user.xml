@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.options.OptionsSelectUserActivity"
+    android:background="@color/background"
+    >
+
+    <TextView
+        android:id="@+id/user_settings_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User settings"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginBottom="5sp"
+        />
+
+    <Button
+        android:id="@+id/user_settings_apply_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_settings_title"
+        android:text="@string/apply_button"/>
+
+    <TextView
+        android:id="@+id/user_settings_active_user_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Active user: "
+        android:layout_below="@+id/user_settings_apply_button"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <EditText
+        android:id="@+id/user_settings_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter user name..."
+        android:layout_below="@+id/user_settings_active_user_text"
+        android:inputType="text"/>
+
+    <Button
+        android:id="@+id/user_settings_add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_settings_edit_text"
+        android:text="ADD USER"/>
+
+    <ListView
+        android:id="@+id/user_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10sp"
+        android:layout_below="@+id/user_settings_add_button"
+        />
+
+
+</RelativeLayout>

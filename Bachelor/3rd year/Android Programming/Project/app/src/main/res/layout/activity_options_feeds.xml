@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.options.OptionsSelectFeedsActivity"
+    android:background="@color/background"
+    >
+
+    <TextView
+        android:id="@+id/feed_settings_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Feeds"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginBottom="50sp"
+
+        />
+
+    <TextView
+        android:id="@+id/feed_settings_active_user_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Active user: "
+        android:layout_below="@+id/feed_settings_title"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <ListView
+        android:id="@+id/feed_metadata_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10sp"
+        android:layout_below="@+id/feed_settings_active_user_text"
+        />
+
+</RelativeLayout>
