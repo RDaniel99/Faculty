@@ -1,4 +1,6 @@
 **/.vs
+**/.vscode
+**/__pycache__
 **/Debug
 *.sln
 *.vcxproj*
