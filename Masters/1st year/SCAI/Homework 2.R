@@ -33,7 +33,7 @@ ns=c(1,5,10,100)
 for (n in ns)
 {
     pdf(paste('histo_norm_',n,'.pdf',sep=''))
-    matplot(x=CLT(n), type='h', main=paste("Histogram for n=",n,sep=""))
+    hist(CLT(n), breaks=50, main=paste("Histogram for n=",n,sep=""))
     dev.off()
 }
 #c.
@@ -49,6 +49,6 @@ CLT2 <- function(n){
 for (n in ns)
 {
     pdf(paste('histo_binom_',n,'.pdf',sep=''))
-    matplot(x=CLT2(n), type='h', main=paste("Histogram for n=",n,sep=""))
+    hist(CLT2(n), main=paste("Histogram for n=",n,sep=""))
     dev.off()
 }
