@@ -34,3 +34,5 @@
 **/*.out
 **/date.in
 **/.DS_Store
+**/*.jpg
+**/*.png
