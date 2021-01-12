@@ -22,6 +22,7 @@ numberOfShades = int(input())
 for filename in os.listdir():
     if filename.endswith('.jpg'):
         image_bgr = cv2.imread(filename)
+        image_gray = cv2.imread(filename,cv2.IMREAD_GRAYSCALE)
         shape = image_bgr.shape
         shape = (shape[0], shape[1], 1)
         image_gray1 = np.average(image_bgr, axis=2)
@@ -35,6 +36,7 @@ for filename in os.listdir():
         image_gray5_2 = image_bgr[:,:,1]
         image_gray5_3 = image_bgr[:,:,2]
         image_gray6 = np.zeros(image_gray2_1.shape)
+        image_gray_to_bgr = cv2.cvtColor(image_gray,cv2.COLOR_GRAY2BGR)
         remainder = 255%numberOfShades
         starts=[]
         starts.append(0)
@@ -79,6 +81,7 @@ for filename in os.listdir():
         results[os.getcwd()+'/results/'+filename.split('.')[0]+'-5_3.jpg']=image_gray5_3
         results[os.getcwd()+'/results/'+filename.split('.')[0]+'-6.jpg']=image_gray6
         results[os.getcwd()+'/results/'+filename.split('.')[0]+'-7.jpg']=image_gray7
+        results[os.getcwd()+'/results/'+filename.split('.')[0]+'-8.jpg']=image_gray_to_bgr
 for k in results:
     print(k)
     cv2.imwrite(k,results[k])
